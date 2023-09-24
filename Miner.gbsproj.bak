@@ -3475,6 +3475,13 @@
                     "id": "fa5661b9-02b6-453a-880d-52d9de5cbaa9"
                 },
                 {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "0313509b-7e82-4ac1-9ccb-bcb2de5aacd7"
+                    },
+                    "id": "944cf57e-d191-4b39-aa2e-68a3e5754e28"
+                },
+                {
                     "command": "EVENT_WAIT",
                     "args": {
                         "time": 2,
@@ -3560,7 +3567,8 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "FINALLY!\nsomething normal"
+                                        "Ah...\nthat felt GREAT",
+                                        "truly cleaning\nhouse here"
                                     ],
                                     "avatarId": ""
                                 },
@@ -5056,22 +5064,11 @@
             "triggers": [],
             "script": [
                 {
-                    "command": "EVENT_OVERLAY_SHOW",
+                    "command": "EVENT_ACTOR_DEACTIVATE",
                     "args": {
-                        "color": "black",
-                        "x": 20,
-                        "y": 0
+                        "actorId": "$self$"
                     },
-                    "id": "bfd8ba94-24fa-40ad-a227-cf0cd0fd0674"
-                },
-                {
-                    "command": "EVENT_OVERLAY_MOVE_TO",
-                    "args": {
-                        "x": 0,
-                        "y": 0,
-                        "speed": 3
-                    },
-                    "id": "80173c19-641f-4f96-be05-8ac61999d3f0"
+                    "id": "2249e238-fd42-4ffd-9a7f-fd4ec70ab53b"
                 },
                 {
                     "command": "EVENT_WAIT",
@@ -5115,6 +5112,13 @@
             "triggers": [],
             "script": [
                 {
+                    "command": "EVENT_ACTOR_DEACTIVATE",
+                    "args": {
+                        "actorId": "$self$"
+                    },
+                    "id": "afddf91d-39aa-4bac-9286-a538a92078c3"
+                },
+                {
                     "command": "EVENT_OVERLAY_SHOW",
                     "args": {
                         "color": "black",
@@ -5128,9 +5132,18 @@
                     "args": {
                         "x": 20,
                         "y": 0,
-                        "speed": 3
+                        "speed": 1
                     },
                     "id": "d5ed5e98-dec2-403c-8f82-7f8b9cd8a9e5"
+                },
+                {
+                    "command": "EVENT_OVERLAY_MOVE_TO",
+                    "args": {
+                        "x": 20,
+                        "y": 18,
+                        "speed": 0
+                    },
+                    "id": "ba099837-ad1c-4451-9de1-3a446d0ff3f4"
                 },
                 {
                     "command": "EVENT_WAIT",
@@ -5139,6 +5152,18 @@
                         "frames": 30
                     },
                     "id": "0c8a0168-c8ef-4604-82fb-e1bb3f8169ae"
+                },
+                {
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "...",
+                            "I hate you...",
+                            "*smile*"
+                        ],
+                        "avatarId": ""
+                    },
+                    "id": "5fb46cd2-5872-4f41-b2ef-b8dfa5107056"
                 },
                 {
                     "command": "EVENT_SWITCH_SCENE",
@@ -17771,7 +17796,10 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "ALL JOBS ARE DONE\nFOR TODAY `(^O^)'"
+                                        "Wahoo! Wa-ha-ha!",
+                                        "ALL JOBS ARE DONE\nFOR TODAY `(^O^)'",
+                                        "Time to hit the\nsack",
+                                        "Zzz... (y_y` )"
                                     ],
                                     "avatarId": ""
                                 },
@@ -18582,9 +18610,9 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 239.1999969482422,
-        "worldScrollY": 102.4000015258789,
-        "zoom": 150,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 87.5,
         "customColorsEnabled": false,
         "sgbEnabled": false,
         "customHead": "",
